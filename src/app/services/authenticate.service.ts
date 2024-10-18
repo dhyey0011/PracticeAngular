@@ -8,10 +8,10 @@ export class AuthService {
 
   constructor() { }
 
-  loginUser() {
+  loginUser(username:string) {
     this.isUserLoggedIn = true;
     localStorage.setItem('isLoggedIn', 'true');
-    localStorage.setItem('username', 'admin');
+    localStorage.setItem('username', username);
   }
 
   logoutUser() {

@@ -11,12 +11,13 @@ import { AuthService } from '../services/authenticate.service';
 export class LoginComponent {
   username: string = '';
   password: string = '';
+  displayName: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
 
   onUserLogin() {
     if (this.username === 'DhyeyDave' && this.password === 'newuser99') {
-      this.authService.loginUser();
+      this.authService.loginUser(this.displayName);
       this.router.navigate(['/dashboard']);
     } else {
       alert('Invalid username or password');
