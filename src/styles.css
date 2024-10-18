@@ -1,0 +1,22 @@
+/* You can add global styles to this fil/* src/styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+  
+  p, label, input, button {
+    font-weight: 400;
+  }
+  
+  button {
+    font-family: inherit;
+    font-weight: 500;
+  }

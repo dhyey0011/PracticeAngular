@@ -1,0 +1,91 @@
+.login-container {
+    width: 500px;
+    margin: 150px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.login-container:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.floating-label-group {
+    position: relative;
+}
+
+.floating-label-group input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.floating-label-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.floating-label-group label {
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    font-size: 16px;
+    color: #777777;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.floating-label-group input:focus+label,
+.floating-label-group input:not(:placeholder-shown)+label {
+    top: -10px;
+    left: 15px;
+    font-size: 12px;
+    color: #4caf50;
+    background-color: #ffffff;
+    padding: 0 10px;
+}
+
+button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+}
